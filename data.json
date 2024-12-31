@@ -1,5 +1,7 @@
 [
   { "rarity": "Mythical", "dad": "Unicorn", "mom": "Blackhole", "star": "10", "element": "Earth" },
+  { "rarity": "Mythical", "dad": "Phoenix", "mom": "Blackhole", "star": "10", "element": "Wind" },
+  { "rarity": "Mythical", "dad": "Dragon", "mom": "Blackhole", "star": "10", "element": "Water" },
             { "rarity": "Legendary", "dad": "Unicorn", "mom": "Lightning", "star": "9", "element": "Earth" },
             { "rarity": "Legendary", "dad": "Phoenix", "mom": "Ice", "star": "9", "element": "Wind" },
             { "rarity": "Legendary", "dad": "Phoenix", "mom": "Lightning", "star": "9", "element": "Wind" },
