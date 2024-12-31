@@ -8,50 +8,81 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .filter-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .filter-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: white;
         }
         table, th, td {
             border: 1px solid #ccc;
         }
         th, td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #2e7d32;
+            color: white;
         }
-        .filter-input {
-            margin-bottom: 20px;
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
     <h1>Animix Guide</h1>
-    <h1>Join our group @airdropngmgabobo</h1>
+    <h1> Join our group and clan <a href="https://t.me/airdropngmgabobo" target="_blank" style="text-decoration: underline; color: inherit;"> @airdropngmgabobo</a></h1>
 
-    <div>
-        <label for="filter-rarity">Filter by Rarity:</label>
-        <input type="text" id="filter-rarity" class="filter-input" placeholder="Type a rarity">
-    </div>
-    <div>
-        <label for="filter-dad">Filter by Dad:</label>
-        <input type="text" id="filter-dad" class="filter-input" placeholder="Type a dad">
-    </div>
-    <div>
-        <label for="filter-mom">Filter by Mom:</label>
-        <input type="text" id="filter-mom" class="filter-input" placeholder="Type a mom">
-    </div>
-    <div>
-        <label for="filter-star">Filter by Star:</label>
-        <input type="text" id="filter-star" class="filter-input" placeholder="Type a star">
-    </div>
-    <div>
-        <label for="filter-element">Filter by Element:</label>
-        <input type="text" id="filter-element" class="filter-input" placeholder="Type an element">
+    <div class="filters">
+        <div class="filter-group">
+            <label for="filter-rarity">Rarity</label>
+            <input type="text" id="filter-rarity" class="filter-input" placeholder="Type a rarity">
+        </div>
+        <div class="filter-group">
+            <label for="filter-dad">Dad</label>
+            <input type="text" id="filter-dad" class="filter-input" placeholder="Type a dad">
+        </div>
+        <div class="filter-group">
+            <label for="filter-mom">Mom</label>
+            <input type="text" id="filter-mom" class="filter-input" placeholder="Type a mom">
+        </div>
+        <div class="filter-group">
+            <label for="filter-star">Star</label>
+            <input type="text" id="filter-star" class="filter-input" placeholder="Type a star">
+        </div>
+        <div class="filter-group">
+            <label for="filter-element">Element</label>
+            <input type="text" id="filter-element" class="filter-input" placeholder="Type an element">
+        </div>
     </div>
 
     <table>
